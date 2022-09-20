@@ -17,4 +17,3 @@ total = [(x, y) for x, y in carrinho]
 print(total)
 total = sum([float(y) for x, y in carrinho])
 print(total)
-

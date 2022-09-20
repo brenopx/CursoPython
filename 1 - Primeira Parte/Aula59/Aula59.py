@@ -8,7 +8,8 @@ for item in lista:
     acumula += item
 print(acumula)
 
-#soma_lista = reduce(lambda acumulador, item: item + acumulador, lista, valor_inicial )
+# soma_lista = reduce(lambda acumulador, item: item + acumulador,
+# lista, valor_inicial )
 soma_lista = reduce(lambda ac, i: i + ac, lista, 0)
 print(soma_lista)
 
@@ -18,14 +19,3 @@ print(f'media = {soma_precos / len(produtos)}')
 soma_idades = reduce(lambda ac, p: p['idade'] + ac, pessoas, 0)
 print(soma_idades)
 print(soma_idades / len(pessoas))
-
-
-
-
-
-
-
-
-
-
-

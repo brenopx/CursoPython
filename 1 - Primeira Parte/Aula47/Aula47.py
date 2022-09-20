@@ -27,4 +27,3 @@ print(exemplo6)
 
 exemplo7 = [v if v % 3 == 0 and v % 8 == 0 else 0 for v in lista3]
 print(exemplo7)
-

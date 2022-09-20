@@ -1,7 +1,9 @@
 import re
 import random
 
+
 REGRESSIVOS = [6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2]
+
 
 def valida(cnpj):
     cnpj = apenas_numeros(cnpj)
@@ -24,6 +26,7 @@ def valida(cnpj):
     else:
         return False
 
+
 def calcula_digito(cnpj, digito):
     if digito == 1:
         regressivos = REGRESSIVOS[1:]
@@ -40,6 +43,7 @@ def calcula_digito(cnpj, digito):
     digito = digito if digito <= 9 else 0
     return f'{novo_cnpj}{digito}'
 
+
 def eh_sequencia(cnpj):
     sequencia = cnpj[0] * len(cnpj)
     if sequencia == cnpj:
@@ -47,8 +51,10 @@ def eh_sequencia(cnpj):
     else:
         False
 
+
 def apenas_numeros(cnpj):
     return re.sub(r'[^0-9]', '', cnpj)
+
 
 def gera():
     primeiro_digito = random.randint(0, 9)
@@ -57,19 +63,17 @@ def gera():
     terceiro_bloco = random.randint(100, 999)
     quarto_bloco = '0001'
 
-    inicio_cnpj = f'{primeiro_digito}{segundo_digito}{segundo_bloco}{terceiro_bloco}{quarto_bloco}00'
+    inicio_cnpj = f'{primeiro_digito}{segundo_digito}{segundo_bloco}\
+        {terceiro_bloco}{quarto_bloco}00'
 
     novo_cnpj = calcula_digito(cnpj=inicio_cnpj, digito=1)
     novo_cnpj = calcula_digito(cnpj=novo_cnpj, digito=2)
 
     return novo_cnpj
 
+
 def formata(cnpj):
     cnpj = apenas_numeros(cnpj)
-    formatado = f'{cnpj[:2]}.{cnpj[2:5]}.{cnpj[5:8]}/{cnpj[8:12]}-{cnpj[12:14]}'
+    formatado = f'{cnpj[:2]}.{cnpj[2:5]}\
+        .{cnpj[5:8]}/{cnpj[8:12]}-{cnpj[12:14]}'
     return formatado
-
-
-
-
-

@@ -6,9 +6,11 @@ Aula 46 - Exercicio
 -> As listas internas contém números entre 1 a 10 e eles podem ser duplicados
 
 Exercicio
--> Crie uma função que encontra o primeiro duplicado considerando o segundo número como a duplicação.
+-> Crie uma função que encontra o primeiro duplicado considerando o segundo
+número como a duplicação.
 Requisitos:
-A ordem dos números duplicados é considerada a partir da segunda ocorrencia ( o numero duplicado em si).
+A ordem dos números duplicados é considerada a partir da segunda ocorrencia
+( o numero duplicado em si ).
 Se não encontrar duplicados na lista, retorne -1
 Exemplo : [1, 2, 3 -> 3 <- , 2, 1] -> 1, 2 e 3 são duplicados, retorne 3
           [1, 2, 3, 4, 5, 6] -> Retorne -1
@@ -45,6 +47,3 @@ def encontra_primeiro_duplicado(param_lista_de_inteiros):
 
 for lista_de_inteiros in lista_de_lista_de_inteiros:
     print(lista_de_inteiros, encontra_primeiro_duplicado(lista_de_inteiros))
-
-
-

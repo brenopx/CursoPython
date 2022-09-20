@@ -35,17 +35,20 @@ Faça uma lista de tarefas com as seguintes opções:
 #                 print('Voce não tem tarefas salvas')
 #                 continue
 #             tarefas.append(ultimo)
-#             print(f"A ultima tarefa removida foi {ultimo} ela foi adicionada novamente")
+#             print(f"A ultima tarefa removida foi {ultimo}
+#             ela foi adicionada novamente")
 #             ultimo = None
 #         else:
 #             print('Digite um comando valido')
 # lista_de_comandos()
+
 
 def show_op(todo_list):
     print()
     print('Tarefas: ')
     print(todo_list)
     print()
+
 
 def do_undo(todo_list, redo_list):
     if not todo_list:
@@ -54,6 +57,7 @@ def do_undo(todo_list, redo_list):
     last_todo = todo_list.pop()
     redo_list.append(last_todo)
 
+
 def do_redo(todo_list, redo_list):
     if not redo_list:
         print('Nada a refazer')
@@ -61,8 +65,10 @@ def do_redo(todo_list, redo_list):
     last_redo = redo_list.pop()
     todo_list.append(last_redo)
 
+
 def do_add(todo, todo_list):
     todo_list.append(todo)
+
 
 if __name__ == '__main__':
     todo_list = []

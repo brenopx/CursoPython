@@ -3,12 +3,12 @@ Aula 31 - Expressão condicional com o operador OR
 """
 nome = input('Qual e o seu nome: ')
 
-#if nome:
+# if nome:
 #    print(f'Seu nome é {nome}')
-#else:
+# else:
 #    print('Voce não digitou nada')
 
-#print(nome or 'Voce não digitou nada!')
+# print(nome or 'Voce não digitou nada!')
 
 a = 0
 b = None
@@ -20,6 +20,3 @@ g = 'Luiz'
 
 var = a or b or c or d or e or f or g
 print(var)
-
-
-

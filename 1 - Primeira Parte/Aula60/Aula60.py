@@ -22,6 +22,3 @@ finally:
     a = None
 print(a)
 print('Bora continuar.....')
-
-
-

@@ -70,4 +70,3 @@ print(d1_json)
 
 with open('abc.json', 'w+') as file:
     file.write(d1_json)
-

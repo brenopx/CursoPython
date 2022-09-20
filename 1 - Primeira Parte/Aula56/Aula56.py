@@ -39,7 +39,7 @@ print(alunos)
 ordena = lambda item: item['nota']
 alunos.sort(key=ordena)  # ordanar os alunos com base em suas notas
 # print(alunos)
-#for aluno in alunos:
+# for aluno in alunos:
 #    print(aluno)
 alunos_agrupados = groupby(alunos, ordena)
 
@@ -49,7 +49,3 @@ for agrupamento, valores_agrupados in alunos_agrupados:
         print(aluno)
         for nome in aluno:
             print('nome' in aluno.va)
-
-
-
-

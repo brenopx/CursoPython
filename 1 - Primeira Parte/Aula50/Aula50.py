@@ -7,7 +7,7 @@ import time
 lista = 'String'
 lista = [0, 1, 2, 3, 4, 5, 6]
 
-#print(hasattr(lista, '__iter__'))
+# print(hasattr(lista, '__iter__'))
 lista = iter(lista)
 
 print(next(lista))
@@ -15,17 +15,19 @@ print(next(lista))
 
 print(hasattr(lista, '__next__'))
 
-#for v in lista:
+# for v in lista:
 #    print(v)
 
 lista = list(range(1000))
 
 print(sys.getsizeof(lista))
 
+
 def gera():
     for n in range(100):
         yield n
         time.sleep(0.1)
+
 
 g = gera()
 
@@ -35,13 +37,15 @@ for v in g:
 print(hasattr(g, '__iter__'))
 print(hasattr(g, '__next__'))
 
+
 def gera():
     variavel = 'Valor 1'
     yield variavel
     variavel = 'Valor 2'
     yield variavel
     variavel = 'Valor1'
-    yield  variavel
+    yield variavel
+
 
 g = gera()
 
@@ -62,4 +66,3 @@ print(sys.getsizeof(lista2))
 
 for v in lista2:
     print(v)
-

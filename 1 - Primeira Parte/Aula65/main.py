@@ -1,6 +1,6 @@
-#import vendas.calc_preco
+# import vendas.calc_preco
 from vendas.calc_preco import aumento, reducao
-#import vendas.formata.preco
+# import vendas.formata.preco
 import vendas.formata.preco as formata
 
 preco = 49.90
@@ -13,5 +13,3 @@ print(preco_com_reducao)
 
 # print(vendas.formata.preco.real(preco))
 print(formata.real(preco))
-
-

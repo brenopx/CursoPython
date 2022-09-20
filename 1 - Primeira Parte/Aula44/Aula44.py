@@ -55,25 +55,3 @@ for chave_pergunta, pergunta_valores in perguntas.items():
 qtd_perguntas = len(perguntas)
 porcentagem_acerto = respostas_certas / qtd_perguntas * 100
 print(f"Voce acertou {respostas_certas}, isso e {porcentagem_acerto} das perguntas")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

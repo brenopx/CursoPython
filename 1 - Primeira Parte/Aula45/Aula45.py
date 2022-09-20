@@ -18,10 +18,10 @@ for v in s1:
 s2 = set()
 s2.add(1)
 s2.add(2)
-s2.add((1,2,3,4,'Luiz'))
+s2.add((1, 2, 3, 4, 'Luiz'))
 s2.discard(2)
 s2.update('a')
-#s2.update('Python')  não usar pois fica mudando a ordem
+# s2.update('Python')  não usar pois fica mudando a ordem
 s2.add('Python')
 print(s2)
 
@@ -55,7 +55,3 @@ if set(lista) == set(lista1):
     print('L1 é igual a l2')
 else:
     print('L1 é diferente de L2')
-
-
-
-

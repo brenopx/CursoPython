@@ -21,8 +21,7 @@ while var1 < 10 and var2 > 0:
     var2 -= 1
 
 print()
-#Solução do professor
+# Solução do professor
 
 for p, r in enumerate(range(10, 1, -1)):
     print(p, r)
-

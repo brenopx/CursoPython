@@ -6,11 +6,13 @@ Aula 69 - Problema dos parametros mutáveis em funções
 # Objetos Imutaveis
 # Tuplas, string, numeros, True, ....
 
-def lista_de_clientes(clientes_iteravel, lista = None):
+
+def lista_de_clientes(clientes_iteravel, lista=None):
     if lista is None:
         lista = []
     lista.extend(clientes_iteravel)
     return lista
+
 
 lista_clientes_1 = ['Fabrício']
 print(lista_clientes_1)
