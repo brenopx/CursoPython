@@ -2,8 +2,9 @@
 Aula 126 - Type hints e MyPy
 https://docs.python.org/3/library/typing.html
 """
-from email import iterators
-from typing import List, Union, Tuple, Dict, Any, NewType, Callable, Sequence, Iterable
+# from email import iterators
+from typing import List, Union, Tuple, Dict, Any,\
+                   NewType, Callable, Sequence, Iterable
 
 # Primitivos
 numero: int = 10
@@ -18,8 +19,10 @@ lista_str_int: List[Union[int, str]] = [1, 2, 3, 'Luiz']
 tupla: Tuple[int, int, int, str] = (1, 2, 3, 'Luiz')
 
 # Dicionário e Conjuntos
-pessoa: Dict[str, Union[str, int]] = {'nome': 'Luiz Otávio', 'sobrenome': 'Miranda', 'idade': 30}
-pessoa2: Dict[str, Any] = {'nome': 'Luiz Otávio', 'sobrenome': 'Miranda', 'idade': 30}
+pessoa: Dict[str, Union[str, int]] = {'nome': 'Luiz Otávio',
+                                      'sobrenome': 'Miranda', 'idade': 30}
+pessoa2: Dict[str, Any] = {'nome': 'Luiz Otávio',
+                           'sobrenome': 'Miranda', 'idade': 30}
 
 # Meu tipo
 MeuDict = Dict[str, Union[str, int, List[int]]]  # Alias

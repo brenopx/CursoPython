@@ -11,6 +11,7 @@ Aula 124 - Unittest #2 - Com TDD
     Passa fome
 """
 
+
 def bacon_com_ovos(n):
     assert isinstance(n, int), 'N deve ser int'
 
@@ -24,5 +25,3 @@ def bacon_com_ovos(n):
         return 'Ovos'
 
     return 'Passar fome'
-
-    

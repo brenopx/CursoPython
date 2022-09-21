@@ -17,6 +17,7 @@ class Pessoa:
 """
 import requests
 
+
 class Pessoa:
     def __init__(self, nome, sobrenome, dados_obtidos=False):
         self.nome = nome

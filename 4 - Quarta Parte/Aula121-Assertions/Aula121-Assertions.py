@@ -22,4 +22,3 @@ except AssertionError as e:
 
 print(f'A soma de 15 + 15 = {soma(15, 15)}')
 print('Chegou no final, ate mais :)')
-
